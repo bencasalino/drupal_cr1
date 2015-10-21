@@ -46,7 +46,13 @@ function new_books_field_default_field_bases() {
     'locked' => 0,
     'module' => 'list',
     'settings' => array(
-      'allowed_values' => array(),
+      'allowed_values' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+        4 => 4,
+        5 => 5,
+      ),
       'allowed_values_function' => '',
     ),
     'translatable' => 0,

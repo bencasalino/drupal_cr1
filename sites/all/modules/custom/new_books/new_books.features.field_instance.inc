@@ -55,11 +55,7 @@ function new_books_field_default_field_instances() {
     'bundle' => 'book_review',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '1 
-2
-3
-4
-5 ',
+    'description' => 'Select a rating from 1-5 for your book.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -78,7 +74,7 @@ function new_books_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_rating',
     'label' => 'Rating',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -133,14 +129,10 @@ function new_books_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('1 
-2
-3
-4
-5 ');
   t('Book Authour');
   t('Rating');
   t('Review Body');
+  t('Select a rating from 1-5 for your book.');
 
   return $field_instances;
 }
